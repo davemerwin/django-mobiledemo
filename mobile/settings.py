@@ -13,6 +13,10 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
+    'django.contrib.flatpages',
+    
+    #external - see requirements.txt
+    'flatcontent',
 )
 LANGUAGE_CODE = 'en-us'
 MANAGERS = ADMINS
@@ -22,6 +26,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 )
 TEMPLATE_DEBUG = DEBUG
 TEMPLATE_DIRS = (os.path.join(PROJECT_PATH, 'templates'))
