@@ -14,6 +14,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.flatpages',
+    'django.contrib.admin',
+    'django.contrib.admindocs',
     
     #external - see requirements.txt
     'flatcontent',
